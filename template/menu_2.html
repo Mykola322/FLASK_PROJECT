@@ -6,8 +6,9 @@
 
 {% block content %}
 <ol>
-    <li>{{ pizza_1 }}</li>
-    <li>{{ pizza_2 }}</li>
-    <li>{{ pizza_3 }}</li>
+    {% for pizza in pizzas %}
+        <li>{{ pizza }}</li>
+    {% endfor %}
+
 </ol>
 {% endblock content %}
